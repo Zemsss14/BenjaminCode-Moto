@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@font-face {
+    font-family: Druk;
+    src: url("../fonts/Druk Wide Bold.ttf");
+}
+
+:root{
+    --primary-color-black: #060507;
+    --primary-color-white: white;
+    --secondary-color: #3F3E44;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+body{
+    background-color: var(--primary-color-black);
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9%;
+    padding: 55px 70px;
+}
+
+ul.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    top: 4%;
+}
+
+li.categories{
+    font-family: Druk;
+    color: var(--primary-color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    position: relative;
+    top: 8px;
+}
+
+.gold-square {
+    width: 100%;
+    height: 100%;
+}
+
+.gold-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 27%;
+    z-index: -1;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-color-black);
+    width: 82%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    gap: 80px;
+}
+
+.bottom-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 50px;
+    gap: 100px;
+}
+
+.cursor{
+    display: flex;
+    gap: 20px;
+}
+
+.description{
+    width: 100%;
+    font-size: 0.8em;
+    font-family: Montserrat;
+    line-height: 1.4rem;
+}
+
+.page-state{
+    font-family: Druk;
+}
+
+.moto-circle{
+    display: flex;
+    width: 100%;
+}
+
+.moto{
+    width: 100%;
+}
+
+.moto-img{
+    width: 100%;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 20%;
+}
+
+.wheel-moto{
+    display: flex;
+    justify-content: end;
+    height: 100%;
+}
+
+.wheel-img{
+    width: 85%;
+}
+
+.back-moto {
+    display: flex;
+    justify-content: end;
+    height: 100%;
+    width: 100%;
+}
+
+.back-moto-img{
+    width: 85%;
+}
