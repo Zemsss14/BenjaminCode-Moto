@@ -66,11 +66,35 @@ li.categories{
     z-index: -1;
 }
 
+.present{
+    display: grid;
+    grid-template-columns: 82% 1fr;
+}
+
+.moto-presentation{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.outer-goldtxt {
+    position: relative;
+    
+}
+
+
+.gold-text-img {
+    position: absolute;
+    translate: 0px 300%;
+    z-index: 2;
+}
+
 .presentation {
     display: flex;
     flex-direction: row;
     background-color: var(--primary-color-black);
-    width: 82%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     justify-content: space-between;
@@ -80,7 +104,7 @@ li.categories{
     display: flex;
     flex-direction: column;
     width: 68%;
-    gap: 80px;
+    justify-content: space-between;
 }
 
 .bottom-left{
@@ -110,11 +134,17 @@ li.categories{
 
 .moto-circle{
     display: flex;
-    width: 100%;
+    width: 115%;
+}
+
+.circle-montblanc {
+    translate: -70px 40px;
 }
 
 .moto{
     width: 100%;
+    position: relative;
+    translate: -100px -60px;
 }
 
 .moto-img{
@@ -136,6 +166,7 @@ li.categories{
 
 .wheel-img{
     width: 85%;
+    object-fit: cover;
 }
 
 .back-moto {
@@ -147,4 +178,54 @@ li.categories{
 
 .back-moto-img{
     width: 85%;
+    object-fit: cover;
+}
+
+.performances{
+    display: flex;
+    margin-top: 55%;
+    width: 100%;
+}
+
+.performance-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.spec-block {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+}
+
+.text-spec {
+    font-size: 18px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    rotate: -180deg;
+    color: var(--secondary-color);
+}
+
+.spec {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.spec-txt {
+    font-size: 30px;
+    font-family: Druk;
+    color: var(--primary-color-white);
+}
+.spec-txt-small {
+    font-size: 12px;
+    font-family: Montserrat;
+    color: var(--primary-color-white);
 }
